@@ -23,4 +23,7 @@ add_executable(${PROJECT_NAME}
         src/device.h
         src/device.cc)
 
-target_link_libraries(${PROJECT_NAME} CONAN_PKG::pcapplusplus CONAN_PKG::spdlog)
+target_link_libraries(${PROJECT_NAME}
+        CONAN_PKG::pcapplusplus
+        CONAN_PKG::spdlog
+        CONAN_PKG::tbb)
